@@ -245,7 +245,7 @@
                   </ul>
                 </div>
                 <div class="short_info" style="margin-bottom:50px">
-                  <a href="" style="background: #ff4522;padding: 12px 30px;color: white;border-radius: 25px;text-decoration: none;">Download Resume</a>
+                  <a id="download-cv" target="_blank" href="" style="background: #ff4522;padding: 12px 30px;color: white;border-radius: 25px;text-decoration: none;">Download Resume</a>
                 </div>
               </div>
               <div class="right">
@@ -988,6 +988,7 @@
         position: "Motion Graphics Designer",
         email: "maryammhaider@gmail.com",
         web:"maryammhaider.netlify.app",
+        cv:"https://docs.google.com/document/d/e/2PACX-1vR0c6_h_9gTFXwcBza5oAV_mj5k5J_kF49-JXSGcIj_OzVCnweGyWCtMSjC_yvV9SQBxZzMgKKhBu3X/pub",
         address: {
           city: "Karachi",
           country: "Pakistan",
@@ -1126,6 +1127,7 @@
         });
 
         $("#email-main").html(me.email);
+        $('#download-cv').attr("href", me.cv)
         $("#domain").html(me.web);
         $("#domain-link").attr("href","https://"+me.web);
         $("#email-main").attr("href", "mailto:" + me.email);
